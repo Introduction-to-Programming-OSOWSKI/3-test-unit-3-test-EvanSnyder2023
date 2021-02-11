@@ -22,7 +22,8 @@ def sumBetweenOdd(x, y):
     total = 0
 
     for i in range (x + 1, y):
-        total = total + i
+        if i % 2 != 0:
+            total = total + i
 
     return total
 
